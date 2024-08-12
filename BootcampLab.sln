@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab.Api", "Lab.Api\Lab.Api.csproj", "{978EC079-2BAF-4D1B-AF70-8B5C1EBA9834}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Api", "2.Api", "{4ECFFA50-879E-4CE8-A063-F6FA609B968E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.UI", "1.UI", "{E9DB67EC-F8F7-4B8D-859B-9D57598EF957}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{978EC079-2BAF-4D1B-AF70-8B5C1EBA9834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{978EC079-2BAF-4D1B-AF70-8B5C1EBA9834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{978EC079-2BAF-4D1B-AF70-8B5C1EBA9834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{978EC079-2BAF-4D1B-AF70-8B5C1EBA9834}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{978EC079-2BAF-4D1B-AF70-8B5C1EBA9834} = {4ECFFA50-879E-4CE8-A063-F6FA609B968E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E1A9655-4E37-4733-BBDC-A50AE000D0C4}
+	EndGlobalSection
+EndGlobal
