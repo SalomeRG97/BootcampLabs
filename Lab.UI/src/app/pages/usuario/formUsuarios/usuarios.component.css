@@ -1,0 +1,18 @@
+/* Estilos para el título */
+h1 {
+  font-size: 2rem;
+  color: #1976d2; /* Color primario de Material Design */
+}
+
+/* Estilos para el botón de enviar */
+.btn-submit {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+/* Estilos para el bloque de valores del formulario */
+pre {
+  font-size: 0.875rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

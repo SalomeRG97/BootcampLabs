@@ -1,0 +1,46 @@
+<app-loading [loading]="loading"></app-loading>
+
+<div class="container mx-auto mt-5 max-w-md">
+  <h1 class="text-2xl font-semibold mb-4">Escriba la nueva contraseña</h1>
+
+  @if (errorMessage != '') {
+  <div class="bg-red-500 text-white p-3 mb-4 rounded">
+    {{ errorMessage }}
+  </div>
+  }
+
+  <!-- Campo para la nueva contraseña -->
+  <mat-form-field class="w-full mb-4">
+    <mat-label>Ingrese contraseña nueva</mat-label>
+    <input
+      matInput
+      type="password"
+      id="contrasennaNueva"
+      [(ngModel)]="contrasennaNueva"
+      placeholder="Ingrese la nueva contraseña"
+    />
+  </mat-form-field>
+
+  <!-- Campo para confirmar la nueva contraseña -->
+  <mat-form-field class="w-full mb-4">
+    <mat-label>Escriba nuevamente la contraseña</mat-label>
+    <input
+      matInput
+      type="password"
+      id="contrasennaNuevaValidacion"
+      [(ngModel)]="contrasennaNuevaValidacion"
+      placeholder="Confirme la nueva contraseña"
+    />
+  </mat-form-field>
+
+  <!-- Botón para cambiar la contraseña -->
+  <button
+    mat-raised-button
+    color="primary"
+    type="submit"
+    class="w-full"
+    (click)="onCambiarContrasenna()"
+  >
+    Cambiar Contraseña
+  </button>
+</div>

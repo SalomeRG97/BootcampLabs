@@ -1,0 +1,102 @@
+<button mat-icon-button (click)="onBack()">
+  <mat-icon>arrow_back</mat-icon>
+</button>
+<h1>{{ isCreateMode ? "Crear" : "Actualizar" }} Usuario</h1>
+<form [formGroup]="usuarioForm" (ngSubmit)="onSubmit()" class="container mt-4">
+  <div class="mb-3 row">
+    <label for="id" class="col-sm-2 col-form-label">Id</label>
+    <div class="col-sm-10">
+      <input id="id" type="text" formControlName="id" class="form-control" />
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <label for="correo" class="col-sm-2 col-form-label">Correo</label>
+    <div class="col-sm-10">
+      <input
+        id="correo"
+        type="email"
+        formControlName="correo"
+        class="form-control"
+        placeholder="Ingrese su correo"
+      />
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <label for="pass" class="col-sm-2 col-form-label">Pass</label>
+    <div class="col-sm-10">
+      <input
+        id="pass"
+        type="password"
+        formControlName="pass"
+        class="form-control"
+        placeholder="Ingrese su contraseña"
+      />
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+    <div class="col-sm-10">
+      <input
+        id="nombre"
+        type="text"
+        formControlName="nombre"
+        class="form-control"
+        placeholder="Ingrese su nombre"
+      />
+    </div>
+  </div>
+
+  <div class="mb-3 row" *ngIf="!isCreateMode">
+    <label for="guid" class="col-sm-2 col-form-label">Guid</label>
+    <div class="col-sm-10">
+      <input
+        id="guid"
+        type="text"
+        formControlName="guid"
+        class="form-control"
+      />
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <label for="vigencia" class="col-sm-2 col-form-label">Vigencia</label>
+    <div class="col-sm-10">
+      <input
+        id="vigencia"
+        type="date"
+        formControlName="vigencia"
+        class="form-control"
+      />
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <label for="codigo" class="col-sm-2 col-form-label">Código</label>
+    <div class="col-sm-10">
+      <input
+        id="codigo"
+        type="text"
+        formControlName="codigo"
+        class="form-control"
+        placeholder="Ingrese el código"
+      />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-10 offset-sm-2">
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        [disabled]="usuarioForm.invalid"
+        class="self-end"
+      >
+        Enviar
+      </button>
+    </div>
+  </div>
+</form>

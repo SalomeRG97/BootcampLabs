@@ -1,0 +1,26 @@
+<div class="container mx-auto mt-5 max-w-lg">
+  <button mat-icon-button (click)="onBack()">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+
+  <!-- Stepper -->
+  <mat-stepper [linear]="isLinear" #stepper class="w-full">
+    <mat-step>
+      <app-validar-correo
+        (stepCompleted)="onStepCompleted(1)"
+      ></app-validar-correo>
+    </mat-step>
+
+    <mat-step>
+      <app-validar-codigo
+        (stepCompleted)="onStepCompleted(2)"
+      ></app-validar-codigo>
+    </mat-step>
+
+    <mat-step>
+      <app-cambiar-contrasenna
+        (stepCompleted)="onStepCompleted(3)"
+      ></app-cambiar-contrasenna>
+    </mat-step>
+  </mat-stepper>
+</div>

@@ -1,0 +1,36 @@
+<app-loading [loading]="loading"></app-loading>
+<div class="container mx-auto mt-5 max-w-md">
+  <h1 class="text-2xl font-semibold mb-2">Ingrese código de validación</h1>
+  <h2 class="text-base text-gray-600 mb-4">
+    Se ha enviado un código de validación a su correo
+  </h2>
+
+  @if (errorMessage != '') {
+  <div class="bg-red-500 text-white p-3 mb-4 rounded">
+    {{ errorMessage }}
+  </div>
+  }
+
+  <!-- Campo de código de validación -->
+  <mat-form-field class="w-full mb-4">
+    <mat-label>Código</mat-label>
+    <input
+      matInput
+      type="text"
+      id="codigo"
+      [(ngModel)]="codigoValidacion"
+      placeholder="Ingrese el código recibido"
+    />
+  </mat-form-field>
+
+  <!-- Botón para validar código -->
+  <button
+    mat-raised-button
+    color="primary"
+    type="submit"
+    class="w-full"
+    (click)="onValidarCodigo()"
+  >
+    Validar código de recuperación
+  </button>
+</div>

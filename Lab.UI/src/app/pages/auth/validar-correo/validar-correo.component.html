@@ -1,0 +1,32 @@
+<app-loading [loading]="loading"></app-loading>
+<div class="container mx-auto mt-5 max-w-md">
+  <h1 class="text-2xl font-semibold mb-4">Ingrese correo de recuperación</h1>
+
+  @if (errorMessage != '') {
+  <div class="bg-red-500 text-white p-3 mb-4 rounded">
+    {{ errorMessage }}
+  </div>
+  }
+
+  <!-- Campo de correo -->
+  <mat-form-field class="w-full mb-4">
+    <mat-label>Correo</mat-label>
+    <input
+      matInput
+      type="email"
+      id="usuario"
+      [(ngModel)]="correo"
+      placeholder="Ingrese su correo"
+    />
+  </mat-form-field>
+
+  <!-- Botón para recuperar contraseña -->
+  <button
+    mat-raised-button
+    color="primary"
+    class="w-full"
+    (click)="onRecuperarContrasenna()"
+  >
+    Recuperar Contraseña
+  </button>
+</div>

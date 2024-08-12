@@ -1,0 +1,24 @@
+<mat-sidenav-container class="h-screen">
+  <mat-sidenav mode="side" opened class="sidebar">
+    <div class="sidebar-header">Labs</div>
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="''" class="nav-item">
+        <mat-icon>home</mat-icon>
+        <span class="ml-2">Home</span>
+      </a>
+      <a mat-list-item [routerLink]="'usuarios'" class="nav-item">
+        <mat-icon>badge</mat-icon>
+        <span class="ml-2">Usuarios</span>
+      </a>
+      <a mat-list-item (click)="onLogout()" class="nav-item">
+        <mat-icon>logout</mat-icon>
+        <span class="ml-2">Logout</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content p-4">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

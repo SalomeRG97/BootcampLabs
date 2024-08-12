@@ -1,0 +1,83 @@
+/* Estilos para el contenedor del sidenav */
+mat-sidenav-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Estilos para el sidebar */
+.sidebar {
+  width: 250px; /* Ajusta el ancho del sidebar */
+  background-color: #2b6cb0; /* Color de fondo del sidebar */
+  color: #ffffff; /* Color del texto */
+  padding-top: 1rem; /* Espaciado superior */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilos para el header del sidebar */
+.sidebar-header {
+  padding: 1rem;
+  text-align: center;
+  background-color: #2b6cb0; /* Color de fondo del header */
+  font-size: 1.25rem; /* Tamaño de fuente */
+  font-weight: bold;
+  color: #ffffff; /* Color del texto */
+}
+
+/* Estilos para los elementos de la lista de navegación */
+.nav-item {
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center; /* Alineación vertical central */
+  color: #ffffff; /* Color del texto */
+  transition: background-color 0.3s;
+}
+
+/* Espaciado entre icono y texto */
+.nav-item .mat-icon {
+  margin-right: 0.5rem; /* Ajusta el margen derecho del icono */
+  color: #ffffff; /* Color del icono */
+}
+
+/* Estilos para el texto dentro de los span */
+.nav-item span {
+  color: #ffffff; /* Color del texto dentro de los span */
+}
+
+/* Estilo de hover para los elementos de la lista de navegación */
+.nav-item:hover {
+  background-color: #1e40af; /* Color de fondo en hover */
+}
+
+/* Estilos para el contenido del sidenav */
+.mat-sidenav-content {
+  flex: 1;
+  background-color: #f7fafc; /* Color de fondo del contenido */
+  overflow: auto; /* Permite el desplazamiento si el contenido es grande */
+}
+
+/* Estilos para el contenido principal */
+.content {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Estilos para los títulos dentro del contenido */
+h1,
+h2 {
+  color: #ffffff; /* Color blanco para los títulos */
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Ajusta el ancho del sidebar en pantallas pequeñas */
+  }
+
+  .sidebar-header {
+    font-size: 1.125rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+  }
+
+  .nav-item {
+    padding: 0.5rem 0.75rem; /* Ajusta el espaciado en pantallas pequeñas */
+  }
+}

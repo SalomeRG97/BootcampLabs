@@ -1,0 +1,65 @@
+/* Contenedor principal */
+.container {
+  max-width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+h1 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* Mensaje de error */
+.bg-red-500 {
+  background-color: #cac145;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.p-3 {
+  padding: 12px;
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+/* Mat-Form-Field */
+mat-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+/* Botón */
+button {
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  mat-form-field {
+    width: 100%;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

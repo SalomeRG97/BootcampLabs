@@ -1,0 +1,17 @@
+/* Estilo para el contenedor principal */
+.container {
+  max-width: 600px;
+}
+
+/* Estilo para el botón de alternar modo lineal */
+#toggle-linear {
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* Estilo para el stepper */
+mat-stepper {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+}
